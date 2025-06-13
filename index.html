@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Konsultan & Servis Motor ITS</title>
+  <script src="script.js" defer></script>
+  <style>
+    body { margin:0; font-family: 'Segoe UI', sans-serif; background:#f4f4f4; color:#333; }
+    header { background:#1e3d59; color:#fff; padding:30px; text-align:center; }
+    nav { background:#324a5f; display:flex; justify-content:center; padding:10px 0; }
+    nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; }
+    nav a:hover { text-decoration:underline; }
+    .hero {
+      position:relative;
+      height:300px;
+      background:url('background.jpg') center/cover;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+    }
+    .hero h1 { font-size:2.8rem; text-shadow:2px 2px 5px rgba(0,0,0,0.7); }
+    .container {
+      max-width:1000px;
+      margin:auto;
+      padding:40px 20px;
+      background:#fff;
+      box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 { color:#1e3d59; margin-bottom:10px; }
+    ul.services { list-style:none; padding-left:0; }
+    ul.services li {
+      background:url('data:image/svg+xml;utf8,<svg fill="%231e3d59" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M13.485 1.929a.5.5 0 0 1 .017.708l-7 7a.5.5 0 0 1-.708.017l-3-3a.5.5 0 0 1 .708-.708L6 8.293l6.646-6.647a.5.5 0 0 1 .708-.017z"/></svg>') no-repeat left center;
+      padding-left:25px;
+      margin-bottom:10px;
+    }
+    .services img { width:100%; margin-top:15px; border-radius:8px; }
+    .map, .form-section, .contact, .reviews { margin-top:40px; }
+    .review-item {
+      border-left: 4px solid #1e3d59;
+      padding:10px 15px;
+      margin-bottom:15px;
+      background:#f9f9f9;
+      border-radius:4px;
+    }
+    .review-item strong { color:#1e3d59; }
+    footer {
+      background:#1e3d59;
+      color:#fff;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+    .submit-btn {
+      background:#44484b;
+      color:#fff;
+      border:none;
+      padding:10px 20px;
+      cursor:pointer;
+    }
+    .submit-btn:hover { background:#324a5f; }
+    input, textarea {
+      width:100%;
+      padding:10px;
+      margin-bottom:15px;
+      border:1px solid #ccc;
+      border-radius:4px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Konsultan & Servis Motor ITS</h1>
+    <p>Solusi Profesional & Spesialis Servis Sepeda Motor</p>
+  </header>
+
+  <nav>
+    <a href="#layanan">Layanan</a>
+    <a href="#lokasi">Lokasi</a>
+    <a href="#kontak">Kontak</a>
+    <a href="#saran">Saran Anda</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Optimalkan Performa Kendaraanmu</h1>
+  </div>
+
+  <div class="container">
+    <section id="layanan">
+      <h2>LAYANAN SEPEDA MOTOR</h2>
+      <ul class="services">
+        <li>Konsultasi Perawatan Sepeda Motor</li><img src="konsul.jpg" alt="Konsultasi Teknisi">
+        <li>Servis Sepeda Motor Komprehensif</li><img src="komprehensif.jpg" alt="Servis Komprehensif">
+        <li>Optimasi Kinerja Kendaraan</li><img src="kinerja montor.jpg" alt="Optimasi Kinerja">
+        <li>Perbaikan Mesin</li><img src="egine.jpg" alt="Perbaikan Mesin">
+        <li>Optimasi Sistem Pengereman</li><img src="pengeriman.jpg" alt="Sistem Pengereman">
+        <li>Perbaikan CVT</li><img src="cvt.jpg" alt="Servis CVT">
+        <li>Peningkatan Suspensi</li><img src="suspensi.jpg" alt="Suspensi">
+        <li>Perbaikan Kelistrikan</li><img src="kelistrikan.jpg" alt="Kelistrikan">
+      </ul>
+    </section>
+
+    <div class="section" id="lokasi">
+      <h2>LOKASI KAMI</h2>
+      <p>Kami berada di area kampus <strong>Institut Teknologi Sepuluh Nopember (ITS)</strong>, Surabaya.</p>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.254191603614!2d112.79500687594399!3d-7.276801971608485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbfe73051f3b%3A0xa3ddba33d0b2c58e!2sInstitut%20Teknologi%20Sepuluh%20Nopember%20(ITS)!5e0!3m2!1sen!2sid!4v1700000000000"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <section id="kontak" class="contact">
+      <h2>Kontak</h2>
+      <p>Email: <a href="mailto:autoprimeservis@gmail.com">autoprimeservis@gmail.com</a></p>
+      <p>Instagram: <a href="https://instagram.com/autoprime123" target="_blank">@autoprime123</a></p>
+      <p>Atau tinggalkan ulasan Anda langsung melalui form di bawah.</p>
+    </section>
+
+    <section id="saran" class="form-section">
+      <h2>Hubungi Kami untuk Saran atau Ulasan</h2>
+      <form id="saranForm">
+        <input type="text" name="nama" placeholder="Nama Anda" required />
+        <input type="email" name="email" placeholder="Email Anda" required />
+        <textarea name="saran" rows="5" placeholder="Tuliskan saran atau ulasan..." required></textarea>
+        <button type="submit" class="submit-btn">Kirim</button>
+      </form>
+    </section>
+
+    <section class="reviews">
+      <h2>Ulasan Pelanggan</h2>
+      <div id="reviewContainer">
+        <!-- Komentar akan muncul di sini -->
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Konsultan & Servis Motor ITS. All rights reserved.</p>
+  </footer>
+</body>
+</html>
